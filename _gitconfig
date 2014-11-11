@@ -1,6 +1,6 @@
 [user]
-    name = John Anderson
-    email = sontek@gmail.com
+	name = housewifehacker
+	email = housewifehacker@gmail.com
 
 [color]
     diff = auto
@@ -12,7 +12,7 @@
     default = matching
 
 [core]
-    editor = vim
+    editor = emacs
     pager = less -R
 
 [alias]

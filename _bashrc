@@ -167,8 +167,8 @@ parse_svn_repository_root() {
   svn info 2>/dev/null | sed -ne 's#^Repository Root: ##p'
 }
 set -o emacs
-export EDITOR="$vim"
-export GIT_EDITOR="$vim"
+export EDITOR="emacs"
+export GIT_EDITOR="emacs"
 
 # Add git and svn branch names
 export PS1="$PS1\$(parse_git_branch)\$(parse_svn_branch) "
