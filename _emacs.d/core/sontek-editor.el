@@ -10,6 +10,13 @@
 ;; but maintain correct appearance
 (setq-default tab-width 8)
 
+(add-hook 'html-mode-hook
+          (lambda ()
+            ;; Default indentation is usually 2 spaces, changing to 4.
+            (set (make-local-variable 'sgml-basic-offset) 4)
+          )
+)
+
 ;; Newline at end of file
 (setq require-final-newline t)
 
@@ -40,7 +47,7 @@
 ;; whitespace-mode, show any trailing whitespace
 (require 'whitespace)
  ;; limit line length
-(setq whitespace-line-column 80)
+;; (setq whitespace-line-column 80)
 (setq whitespace-style '(face tabs empty trailing lines-tail))
 (global-whitespace-mode)
 

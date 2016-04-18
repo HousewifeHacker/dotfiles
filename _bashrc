@@ -150,9 +150,6 @@ if [ -x "/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
     PATH=/Applications/MacVim.app/Contents/MacOS/:$PATH
 fi
 
-PYTHONSTARTUP=~/.pythonrc.py
-export PYTHONSTARTUP
-
 parse_git_branch ()
 {
   git name-rev HEAD 2> /dev/null | sed 's#HEAD\ \(.*\)#(git::\1)#'
